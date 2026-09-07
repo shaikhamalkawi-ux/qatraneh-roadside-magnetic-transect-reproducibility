@@ -1,0 +1,72 @@
+{
+  "lambda_grid_points": 501,
+  "lambda_grid_spacing": "logarithmic",
+  "nested_decisions_recomputed": 70,
+  "locked_decision_matches": 70,
+  "north_coarse_LF_full_margin_pct": 4.092498004196957,
+  "north_coarse_HF_full_margin_pct": 4.316415450908547,
+  "north_field_12m_margin_pct": 3.82443936778575,
+  "routes_C10_ge_0_90": 10,
+  "routes_C10_equal_1_00": 5,
+  "exact_max_routes_unstable_after_10m": 3,
+  "outer_tail_fully_admissible": {
+    "fully_admissible_disagreement_windows": 27,
+    "complete_record_class_tail_best": 24,
+    "inner_winner_tail_best": 1,
+    "third_model_tail_best": 2
+  },
+  "outer_tail_legacy35_reconstructed": {
+    "legacy_disagreement_windows": 35,
+    "complete_record_class_tail_best": 30,
+    "inner_winner_tail_best": 2,
+    "third_model_tail_best": 3
+  },
+  "legacy_third_model_cases": [
+    {
+      "Side": "North",
+      "Route": "Field K",
+      "Outer_window_m": 5,
+      "Inner_LOOCV_winner": "E",
+      "Complete_record_class": "P",
+      "Tail_best_model": "G"
+    },
+    {
+      "Side": "North",
+      "Route": "Field K",
+      "Outer_window_m": 6,
+      "Inner_LOOCV_winner": "E",
+      "Complete_record_class": "P",
+      "Tail_best_model": "G"
+    },
+    {
+      "Side": "North",
+      "Route": "Field K",
+      "Outer_window_m": 7,
+      "Inner_LOOCV_winner": "E",
+      "Complete_record_class": "P",
+      "Tail_best_model": "G"
+    }
+  ],
+  "single_station_model_jackknife": {
+    "matching_complete_model_decisions": 118,
+    "total_deletions": 120,
+    "routes_invariant_under_all_12_deletions": 8,
+    "all_12m_and_14m_deletions_match_complete_model": true,
+    "changed_cases": [
+      {
+        "Side": "North",
+        "Route": "Coarse LF",
+        "Deleted_distance_m": 8.0,
+        "Full_record_winner": "G",
+        "Jackknife_winner": "P"
+      },
+      {
+        "Side": "North",
+        "Route": "Coarse HF",
+        "Deleted_distance_m": 8.0,
+        "Full_record_winner": "G",
+        "Jackknife_winner": "P"
+      }
+    ]
+  }
+}

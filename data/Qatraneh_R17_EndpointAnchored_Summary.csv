@@ -1,0 +1,11 @@
+Side,Route,endpoint_anchored_kstar,negative_total,zero_total
+North,Coarse HF,2,0,0
+North,Coarse LF,2,0,0
+North,Field K,2,0,0
+North,Fine HF,2,0,0
+North,Fine LF,2,0,0
+South,Coarse HF,10,50,23
+South,Coarse LF,11,83,3
+South,Field K,2,0,0
+South,Fine HF,2,0,0
+South,Fine LF,2,0,0

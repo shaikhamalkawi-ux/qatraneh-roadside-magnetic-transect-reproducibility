@@ -1,0 +1,11 @@
+Side,Route,Full_record_winner,Matching_deletions_n,Total_deletions_n,Changed_deletion_distances_m
+North,Field K,P,12,12,
+North,Fine LF,P,12,12,
+North,Fine HF,P,12,12,
+North,Coarse LF,G,11,12,8
+North,Coarse HF,G,11,12,8
+South,Field K,P,12,12,
+South,Fine LF,P,12,12,
+South,Fine HF,P,12,12,
+South,Coarse LF,P,12,12,
+South,Coarse HF,P,12,12,
