@@ -1,0 +1,11 @@
+Side,Route,Full_model,kstar,Dstar_m,C10,Outer_max
+North,Field K,P,5,12,1.0,False
+North,Fine LF,P,4,12,1.0,False
+North,Fine HF,P,6,12,1.0,False
+North,Coarse LF,G,4,10,0.9625,True
+North,Coarse HF,G,4,10,0.961038961038961,True
+South,Field K,P,5,9,0.9932659932659933,True
+South,Fine LF,P,7,7,0.9886363636363634,True
+South,Fine HF,P,8,7,0.9204545454545453,True
+South,Coarse LF,P,11,8,1.0,False
+South,Coarse HF,P,11,9,1.0,False

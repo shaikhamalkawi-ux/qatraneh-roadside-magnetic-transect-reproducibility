@@ -1,0 +1,3 @@
+source_doi,site,site_type,approx_at_3m,approx_at_15m,approx_at_45m,fraction_of_observed_3_45m_decline_realized_by_15m,interpretation_boundary
+10.3390/atmos17010114,R,railway,6.0,1.0,0.8,0.961538,descriptive consistency check only; no k* or D* assigned
+10.3390/atmos17010114,S,street,2.0,0.5,0.2,0.833333,descriptive consistency check only; no k* or D* assigned

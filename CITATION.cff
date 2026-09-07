@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite this repository and the associated manuscript."
+title: "Qatraneh Roadside Magnetic Transect Inference-Stability Reproducibility Package"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: "Lataifeh"
+    given-names: "Mahdi Salem Q."
+    affiliation: "Department of Physics, Yarmouk University, Irbid, Jordan"
+    email: "mahdi.q@yu.edu.jo"
+  - family-names: "Malkawi"
+    given-names: "Ghassan"
+    affiliation: "Computer Information Science (CIS), Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates"
+    email: "gmalkawi@hct.ac.ae"
+  - family-names: "Elsayed"
+    given-names: "Ahmed Abdelaziz"
+    affiliation: "Department of Computer Engineering and Computational Sciences, School of Engineering, Applied Sciences and Technology, Canadian University Dubai, Dubai P.O. Box 117781, United Arab Emirates"
+    email: "ahmed.elsayed@cud.ac.ae"
+  - family-names: "Albarghouthy"
+    given-names: "Haroun"
+    affiliation: "Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates"
+    email: "halbarghouthy@hct.ac.ae"
+keywords:
+  - environmental magnetism
+  - magnetic susceptibility
+  - roadside soil
+  - sampling design
+  - spatial extent
+  - station placement
+  - inference stability

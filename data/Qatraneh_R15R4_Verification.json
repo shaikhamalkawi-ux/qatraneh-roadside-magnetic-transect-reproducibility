@@ -1,0 +1,14 @@
+{
+  "rows": 24,
+  "complete_positive_routes": 10,
+  "cutpoint_positive": 60,
+  "cutpoint_total": 60,
+  "loo_positive": 120,
+  "loo_total": 120,
+  "sparse_fit_total": 40830,
+  "kstar_min": 4,
+  "kstar_max": 11,
+  "Observed_max_fraction_ge_0.9_by_10m": 10,
+  "Dstar_le_10": 7,
+  "outer_max_count": 5
+}

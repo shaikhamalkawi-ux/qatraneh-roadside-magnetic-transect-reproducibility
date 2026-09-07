@@ -1,0 +1,11 @@
+Side,Route,C10,Dstar_m,Unstable_after_10m
+North,Field K,1.0,12.0,True
+North,Fine LF,1.0,12.0,True
+North,Fine HF,1.0,12.0,True
+North,Coarse LF,0.9625,10.0,False
+North,Coarse HF,0.961038961038961,10.0,False
+South,Field K,0.9932659932659933,9.0,False
+South,Fine LF,0.9886363636363634,7.0,False
+South,Fine HF,0.9204545454545453,7.0,False
+South,Coarse LF,1.0,8.0,False
+South,Coarse HF,1.0,9.0,False

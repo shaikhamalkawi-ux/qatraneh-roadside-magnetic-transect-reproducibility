@@ -1,0 +1,7 @@
+Run,Reconciled_profile,Rows,Separation_m,Workbook_check,Decision
+A,S1,40,+5,Mean 29.22; median 28.6; SD 13.02; maximum 71.7 at 11.6 m,Admit: count and published mean/median/dispersion agree closely
+B,S2,31,0,Mean 25.37; median 21.4; SD 13.54,"Admit with dispersion flag: count, mean and median agree; published SD is 8.6"
+C,N1,41,+5,Mean 29.91; median 29.0; SD 10.16,Admit with count flag: mean/median agree; article reports 40 readings
+D,S3 candidate,32,+5,Mean 27.53; median 26.55; 32 values duplicate a segment of run C,Exclude: fails published S3 summary and contains duplicated N1 susceptibility sequence
+E,N2,54,0,Mean 27.10; median 25.2; SD 10.13,"Admit: count, mean and median match published profile"
+F,N3,40,-5,Mean 30.18; median 29.25; SD 8.26,Admit with count/median flag: article reports 41 readings and median 28.3

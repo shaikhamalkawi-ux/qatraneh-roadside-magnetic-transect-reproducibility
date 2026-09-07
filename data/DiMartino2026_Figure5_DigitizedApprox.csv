@@ -1,0 +1,11 @@
+source_doi,source_figure,site,site_type,distance_m,approx_mass_susceptibility_1e-6_m3_kg,provenance,raw_measurement
+10.3390/atmos17010114,Figure 5,R,railway,3,6.0,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,R,railway,6,2.0,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,R,railway,15,1.0,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,R,railway,25,0.9,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,R,railway,45,0.8,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,S,street,3,2.0,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,S,street,6,0.6,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,S,street,15,0.5,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,S,street,25,0.3,approximate value digitized/read from published figure,false
+10.3390/atmos17010114,Figure 5,S,street,45,0.2,approximate value digitized/read from published figure,false

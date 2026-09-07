@@ -1,0 +1,35 @@
+{
+  "creators": [
+    {
+      "name": "Lataifeh, Mahdi Salem Q.",
+      "affiliation": "Department of Physics, Yarmouk University, Irbid, Jordan"
+    },
+    {
+      "name": "Malkawi, Ghassan",
+      "affiliation": "Computer Information Science (CIS), Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates"
+    },
+    {
+      "name": "Elsayed, Ahmed Abdelaziz",
+      "affiliation": "Department of Computer Engineering and Computational Sciences, School of Engineering, Applied Sciences and Technology, Canadian University Dubai, Dubai P.O. Box 117781, United Arab Emirates"
+    },
+    {
+      "name": "Albarghouthy, Haroun",
+      "affiliation": "Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates"
+    }
+  ],
+  "title": "Qatraneh Roadside Magnetic Transect Inference-Stability Reproducibility Package",
+  "version": "1.0.0",
+  "access_right": "open",
+  "upload_type": "software",
+  "language": "eng",
+  "keywords": [
+    "environmental magnetism",
+    "magnetic susceptibility",
+    "roadside soil",
+    "sampling design",
+    "spatial extent",
+    "station placement",
+    "inference stability"
+  ],
+  "description": "Machine-readable Qatraneh roadside magnetic-susceptibility data, derived result tables, deterministic Python code, and explicitly labeled figure-derived Di Martino et al. (2026) approximate values supporting a descriptive consistency check for the manuscript Roadside Magnetic Transects Can Appear Complete Before Spatial Inference Stabilizes. The third-party Daejeon publisher XLSX is not redistributed. Author-approved split licensing: software/code under MIT; data, documentation, and author-generated figures under CC BY 4.0. See the included license files for scope."
+}
