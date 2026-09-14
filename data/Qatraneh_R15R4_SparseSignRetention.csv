@@ -1,4 +1,4 @@
-Side,Route,k,positive,total,R_k,negative
+Side,Route,k,positive,total,R_k,nonpositive
 North,Field K,2,57,66,0.8636363636363636,9
 North,Field K,3,215,220,0.9772727272727273,5
 North,Field K,4,493,495,0.9959595959595959,2

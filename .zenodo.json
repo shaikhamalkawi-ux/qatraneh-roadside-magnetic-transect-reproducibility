@@ -17,7 +17,7 @@
       "affiliation": "Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates"
     }
   ],
-  "title": "Qatraneh Roadside Magnetic Transect Inference-Stability Reproducibility Package",
+  "title": "Direction Retention and Spatial-Model Stability in Roadside Magnetic Transects - Data and Reproducibility Package",
   "version": "1.0.0",
   "access_right": "open",
   "upload_type": "software",
@@ -31,5 +31,6 @@
     "station placement",
     "inference stability"
   ],
-  "description": "Machine-readable Qatraneh roadside magnetic-susceptibility data, derived result tables, deterministic Python code, and explicitly labeled figure-derived Di Martino et al. (2026) approximate values supporting a descriptive consistency check for the manuscript Roadside Magnetic Transects Can Appear Complete Before Spatial Inference Stabilizes. The third-party Daejeon publisher XLSX is not redistributed. Author-approved split licensing: software/code under MIT; data, documentation, and author-generated figures under CC BY 4.0. See the included license files for scope."
+  "description": "Manuscript-associated Qatraneh data and reproducibility package. Qatraneh calculations are executable; Daejeon reconciliation and summaries are preserved outputs, not an executable raw-data replay. No Zenodo DOI is assigned in this metadata. Software is licensed under MIT; author-generated data, documentation, and figures are licensed under CC BY 4.0. The deposit-level CC BY designation refers to data/documentation and does not override the separate MIT software license. See LICENSES.md; third-party material retains its source terms.",
+  "license": "cc-by-4.0"
 }

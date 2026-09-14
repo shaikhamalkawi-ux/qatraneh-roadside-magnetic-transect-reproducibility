@@ -1,15 +1,5 @@
-# Data, Documentation, and Author-Generated Figures License
+# Data, documentation and author-generated figures
 
-Unless a file states otherwise, the data tables, documentation, and author-generated figures in this repository are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+Author-owned data tables, documentation and author-generated figures are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/ . Appropriate credit, a licence link, and an indication of changes are required.
 
-License: https://creativecommons.org/licenses/by/4.0/
-
-You may share and adapt these materials for any purpose, including commercially, provided appropriate credit is given, a link to the license is supplied, and changes are indicated.
-
-## Scope and third-party material
-
-- The files under `reproducibility/` are software and are licensed separately under the MIT License in `LICENSE_CODE_MIT.txt`.
-- The Qatraneh machine-readable observation and derived-result tables under `data/` are released under CC BY 4.0 unless explicitly noted otherwise.
-- The author-generated Figures 1–4 included in this repository are released under CC BY 4.0.
-- `data/DiMartino2026_Figure5_DigitizedApprox.csv` and `data/DiMartino2026_Figure5_DescriptiveCheck.csv` contain figure-derived approximate values and descriptive arithmetic based on Di Martino et al. (2026), DOI 10.3390/atmos17010114. They are not original raw measurements. The source article is itself distributed under CC BY 4.0; source attribution must be preserved.
-- The official Daejeon publisher supplementary XLSX is not redistributed in this repository. Derived reconciliation and summary records are included only within the analytical and provenance boundaries documented in the repository.
+Software is separately licensed under MIT. Third-party materials are not relicensed. The Di Martino figure-derived approximate values retain attribution to DOI 10.3390/atmos17010114 and are not original raw measurements. The Daejeon publisher XLSX is not redistributed. The MDPI template in the separate source archive retains its own licence notice.

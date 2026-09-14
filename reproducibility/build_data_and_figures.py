@@ -1,5 +1,5 @@
-# R16 NOTE: This legacy builder reproduces fixed-table figures and station-layout outputs.
-# Qatraneh G/P/E model selection is independently recomputed by recompute_qatraneh_gep.py,
+# This builder reproduces fixed-table figures and station-layout outputs.
+# Qatraneh G/P/E model selection is separately recomputed by recompute_qatraneh_gep.py,
 # which is the authoritative reproducibility path for nested model decisions and robustness checks.
 from pathlib import Path
 import itertools, json, math
@@ -110,19 +110,23 @@ sparse=[]; kstars={}
 for side,route,x,y in routes:
     all_R={}
     for k in range(2,13):
-        pos=tot=0
+        pos=tot=zero=0
         for inds in itertools.combinations(range(12),k):
             tot+=1
-            if ts(x[list(inds)],y[list(inds)])>0: pos+=1
+            slope=ts(x[list(inds)],y[list(inds)])
+            if slope>0: pos+=1
+            elif slope==0: zero+=1
+        if route=='Field K':
+            assert zero == 0, 'Field negative-layout figure requires zero-free subsets'
         R=pos/tot
         all_R[k]=R
-        sparse.append({'Side':side,'Route':route,'k':k,'positive':pos,'total':tot,'R_k':R,'negative':tot-pos})
+        sparse.append({'Side':side,'Route':route,'k':k,'positive':pos,'total':tot,'R_k':R,'nonpositive':tot-pos})
     ks=min(k for k in range(2,13) if all(all_R[j]==1 for j in range(k,13)))
     kstars[(side,route)]=ks
 pd.DataFrame(sparse).to_csv(DATA/'Qatraneh_R15R4_SparseSignRetention.csv',index=False)
 
 # Legacy R15R2 decision record retained for fixed-table figure reconstruction only;
-# independently reproduced 70/70 by recompute_qatraneh_gep.py.
+# separately reproduced 70/70 by recompute_qatraneh_gep.py.
 windows=[6,7,8,9,10,12,14]
 model_rows=[
 ('North','Field K',['E','E','G','G','G','P','P'],'P',12),
@@ -149,7 +153,7 @@ for side,route,seq,full,dstar in model_rows:
 integ=pd.DataFrame(integ)
 integ.to_csv(DATA/'Qatraneh_R15R4_IntegratedResults.csv',index=False)
 
-# Daejeon locked summary
+# Daejeon fixed summary: output preservation only, not workbook-to-result replay
 D=pd.DataFrame([
 ['S1','-', 'G',35.6,33.7,16,34],
 ['S2','-', 'E',6.0,1.0,4,25],
@@ -158,7 +162,7 @@ D=pd.DataFrame([
 ['N3','-', 'E',55.4,91.4,1,34]], columns=['Profile','Sign','Full_model','Model_stable_m','Sign_stable_m','Tail_best','Eligible'])
 D.to_csv(DATA/'Daejeon_R15R4_LockedSummary.csv',index=False)
 
-# Daejeon reconciliation
+# Daejeon fixed reconciliation record: no source-workbook extraction is performed here
 R=pd.DataFrame([
 ['A','S1',40,'+5','Mean 29.22; median 28.6; SD 13.02; maximum 71.7 at 11.6 m','Admit: count and published mean/median/dispersion agree closely'],
 ['B','S2',31,'0','Mean 25.37; median 21.4; SD 13.54','Admit with dispersion flag: count, mean and median agree; published SD is 8.6'],
@@ -180,7 +184,7 @@ for ax, profile, ylabel, title in [
     ax.grid(alpha=.22,linewidth=0.9); ax.legend(frameon=False); style_axis(ax)
 fig.tight_layout(h_pad=2.0); fig.savefig(FIG/'Figure1_Qatraneh_Bilateral_Profiles.pdf',bbox_inches='tight'); fig.savefig(FIG/'Figure1_Qatraneh_Bilateral_Profiles.png',dpi=300,bbox_inches='tight'); plt.close(fig)
 
-# Figure 2: paper-carrying figure, stacked panels for readability
+# Figure 2: observed-maximum comparison and model decisions
 profile_labels=[f"{s[0]} - {r}" for s,r,_,_,_ in model_rows]
 mat=np.array([[{'G':0,'P':1,'E':2}[m] for m in seq] for _,_,seq,_,_ in model_rows])
 fig,axs=plt.subplots(2,1,figsize=(10.8,11.2),gridspec_kw={'height_ratios':[1.35,1]})
@@ -209,10 +213,10 @@ for i,row in integ.iterrows():
     ax.annotate(label,(row['C10']*100,row['Dstar_m']),xytext=offsets[(row.Side,row.Route)],textcoords='offset points',fontsize=10.5,fontweight='bold')
 ax.axvline(90,linestyle='--',linewidth=1); ax.axhline(10,linestyle='--',linewidth=1)
 ax.set_xlim(89,103.5); ax.set_ylim(6,13); ax.set_xlabel('Complete-record maximum encountered by 10 m (%)'); ax.set_ylabel(r'Model stabilization $D^*$ (m)')
-ax.set_title('(b) Apparent completion does not ensure stability')
+ax.set_title('(b) Observed maximum and model stability differ')
 ax.text(89.3,12.6,'10/10 profiles >=90% by 10 m\n7/10 model-stable by 10 m',fontsize=12,fontweight='bold',va='top')
 style_axis(ax)
-fig.tight_layout(h_pad=2.2); fig.savefig(FIG/'Figure2_ApparentCompleteness_and_ModelStability.pdf',bbox_inches='tight'); fig.savefig(FIG/'Figure2_ApparentCompleteness_and_ModelStability.png',dpi=300,bbox_inches='tight'); plt.close(fig)
+fig.tight_layout(h_pad=2.2); fig.savefig(FIG/'Figure2_ObservedMaximum_and_ModelStability.pdf',bbox_inches='tight'); fig.savefig(FIG/'Figure2_ObservedMaximum_and_ModelStability.png',dpi=300,bbox_inches='tight'); fig.savefig(FIG/'Figure2_ObservedMaximum_and_ModelStability.svg',bbox_inches='tight'); plt.close(fig)
 
 # Figure 3: station placement result, stacked panels for readability
 fig,axs=plt.subplots(2,1,figsize=(9.6,9.4))
@@ -220,7 +224,7 @@ field=sparse_df=pd.DataFrame(sparse)
 neg=[]
 for k in [2,3,4,5]:
     q=field[(field.Route=='Field K')&(field.k==k)]
-    neg.append(int(q.negative.sum()))
+    neg.append(int(q.nonpositive.sum()))
 axs[0].bar([2,3,4,5],neg)
 axs[0].set_xticks([2,3,4,5]); axs[0].set_xlabel('Stations retained, k'); axs[0].set_ylabel('Negative field-profile layouts\n(north + south)'); axs[0].set_ylim(0,16.5)
 axs[0].set_title('(a) Sparse layouts can reverse the observed direction')
