@@ -1,6 +1,6 @@
 # Qatraneh Roadside Magnetic Transect — Reproducibility Package
 
-This repository accompanies the manuscript **“Direction Retention and Spatial-Model Stability in Roadside Magnetic Transects.”**
+This repository accompanies the manuscript **“Station Selection and Transect Extent in Roadside Magnetic Susceptibility: A Case Study from Qatraneh, Jordan.”**
 
 It preserves the machine-readable Qatraneh observation table, derived result tables, and deterministic Python code used to reproduce the Qatraneh fixed-table analyses and the reported model-selection robustness checks.
 
