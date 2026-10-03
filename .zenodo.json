@@ -1,14 +1,14 @@
 {
   "creators": [
     {
-      "name": "Lataifeh, Mahdi Salem Q.",
-      "affiliation": "Department of Physics, Yarmouk University, Irbid, Jordan",
-      "orcid": "0000-0002-7399-1314"
-    },
-    {
       "name": "Malkawi, Ghassan",
       "affiliation": "Computer Information Science (CIS), Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates",
       "orcid": "0000-0002-5320-7561"
+    },
+    {
+      "name": "Lataifeh, Mahdi Salem Q.",
+      "affiliation": "Department of Physics, Yarmouk University, Irbid, Jordan",
+      "orcid": "0000-0002-7399-1314"
     },
     {
       "name": "Elsayed, Ahmed",
