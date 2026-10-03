@@ -37,12 +37,12 @@ The separate model-recomputation script is the authoritative path for the Qatran
 
 ## Authors
 
-1. Mahdi Salem Q. Lataifeh — Department of Physics, Yarmouk University, Irbid, Jordan
-2. Ghassan Malkawi — Computer Information Science (CIS), Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates
+1. Ghassan Malkawi — Computer Information Science (CIS), Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates
+2. Mahdi Salem Q. Lataifeh — Department of Physics, Yarmouk University, Irbid, Jordan
 3. Ahmed Elsayed — Department of Computer Engineering and Computational Sciences, School of Engineering, Applied Sciences and Technology, Canadian University Dubai, Dubai P.O. Box 117781, United Arab Emirates
 4. Haroun Albarghouthy — Department of Mathematics and Natural Sciences, Faculty of Engineering Technology and Science, Higher Colleges of Technology, Al Ain, United Arab Emirates
 
-Correspondence: **Haroun Albarghouthy** — `halbarghouthy@hct.ac.ae`
+Correspondence: **Ghassan Malkawi** — `gmalkawi@hct.ac.ae`
 
 ## Citation and DOI
 
