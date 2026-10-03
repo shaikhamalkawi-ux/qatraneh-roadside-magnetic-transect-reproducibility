@@ -39,7 +39,7 @@ The separate model-recomputation script is the authoritative path for the Qatran
 
 1. Mahdi Salem Q. Lataifeh — Department of Physics, Yarmouk University, Irbid, Jordan
 2. Ghassan Malkawi — Computer Information Science (CIS), Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates
-3. Ahmed Abdelaziz Elsayed — Department of Computer Engineering and Computational Sciences, School of Engineering, Applied Sciences and Technology, Canadian University Dubai, Dubai P.O. Box 117781, United Arab Emirates
+3. Ahmed Elsayed — Department of Computer Engineering and Computational Sciences, School of Engineering, Applied Sciences and Technology, Canadian University Dubai, Dubai P.O. Box 117781, United Arab Emirates
 4. Haroun Albarghouthy — Higher Colleges of Technology, Al Ain Campus, Al Ain P.O. Box 17155, United Arab Emirates
 
 Correspondence: **Haroun Albarghouthy** — `halbarghouthy@hct.ac.ae`
